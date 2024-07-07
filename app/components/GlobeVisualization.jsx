@@ -127,12 +127,20 @@ const GlobeVisualization = ({ setLoading }) => {
 
 			setTimeout(() => {
 				setTickerLoaded(true);
-			}, 3000);
+			}, 0);
 
 			const controls = myGlobe.controls();
 			controls.enableZoom = false;
 			controls.autoRotate = true;
 			controls.autoRotateSpeed = -0.5;
+
+			// Add click event listener to stop and resume auto-rotation
+			document.getElementById('globeViz').addEventListener('click', () => {
+				controls.autoRotate = false;
+				setTimeout(() => {
+					controls.autoRotate = true;
+				}, 0);
+			});
 		}
 	}, [setLoading]);
 
@@ -145,19 +153,25 @@ const GlobeVisualization = ({ setLoading }) => {
 	};
 
 	return (
-		<div classlabel="relative" style={{ width: '100%', height: '100vh' }}>
-			<div id="globeViz" classlabel="absolute inset-0"></div>
+		<div className="relative" style={{ width: '100%', height: '100vh' }}>
+			<div id="globeViz" className="absolute inset-0"></div>
 			<button
 				onClick={handleScrollDown}
-				classlabel="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-12 py-2 rounded-full"
+				className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-12 py-2 bg-opacity-75 rounded-full"
 			>
 				↓
 			</button>
-			{/* {tickerLoaded && (
-                <p classlabel="absolute top-0 left-0 whitespace-pre-wrap text-8xl font-medium tracking-tighter text-black dark:text-white p-4">
-                    <NumberTicker value={100} />
-                </p>
-            )} */}
+			{tickerLoaded && (
+				<div>
+					<p className="absolute top-1/4 right-0 mx-4 whitespace-pre-wrap font-bold text-lg tracking-tighter text-black dark:text-white p-3 bg-gray-800 bg-opacity-75 rounded-xl">
+						<NumberTicker value={54} /> campuses
+					</p>
+					<p className="absolute top-1/4 left-0 whitespace-pre-wrap font-bold text-lg tracking-tighter text-black dark:text-white p-3 bg-gray-800 bg-opacity-75 rounded-xl">
+						<NumberTicker value={713} /> members
+					</p>
+				</div>
+
+			)}
 		</div>
 	);
 };
