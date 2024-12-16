@@ -1,0 +1,24 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { Navbar } from '@/components/navbar';
+import { logo } from '@/assets/index';
+
+export function Footer() {
+  return (
+    <footer className=" border-t border-white/10">
+      <div className="container mx-auto px-4 py-8 max-md:py-4 flex max-md:flex-col max-md:gap-4 md:justify-between md:items-center">
+        <Link href={"/"}>
+          <Image
+            src={logo}
+            alt="42 Blockchain logo"
+            width={120}
+            height={53}
+            priority
+
+          />
+        </Link>
+        <Navbar className="flex flex-wrap" />
+      </div>
+    </footer>
+  )
+}
