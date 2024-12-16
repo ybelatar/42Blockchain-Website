@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navbar';
 import { logo } from '@/assets/index';
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className=" border-t border-white/10">
       <div className="container mx-auto px-4 py-8 max-md:py-4 flex max-md:flex-col max-md:gap-4 md:justify-between md:items-center">
@@ -19,6 +20,9 @@ export function Footer() {
         </Link>
         <Navbar className="flex flex-wrap" />
       </div>
+      <h2 className="text-gray-400 text-sm text-center border-t border-white/10 pt-4">
+        © {currentYear} 42 Blockchain. All rights reserved.
+      </h2>
     </footer>
   )
 }
