@@ -22,3 +22,10 @@ export const navLinks = [
   { label: "Contact", href: "/#contact" },
   { label: "Events", href: "/events" },
 ]
+
+export const socialLinks = [
+  { label: "Twitter", href: "https://twitter.com/42Blockchain_" },
+  { label: "Discord", href: "https://discord.gg/2NKXT7X8pe" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/42blockchain/" },
+  { label: "Youtube", href: "https://www.youtube.com/@42blockchain" }
+]

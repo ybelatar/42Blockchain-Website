@@ -20,7 +20,7 @@ export function Footer() {
         </Link>
         <Navbar className="flex flex-wrap" />
       </div>
-      <h2 className="text-gray-400 text-sm text-center border-t border-white/10 pt-4">
+      <h2 className="text-gray-400 text-sm text-center  pt-4">
         © {currentYear} 42 Blockchain. All rights reserved.
       </h2>
     </footer>

@@ -1,8 +1,9 @@
 
+import { Hero } from "@/components/sections/hero";
 export default function Home() {
   return (
-    <div>
-      hello world
-    </div>
+    <section className="container mx-auto">
+      <Hero />
+    </section>
   );
 }
