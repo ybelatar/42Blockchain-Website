@@ -1,5 +1,11 @@
 import { Users, GraduationCap, Rocket, Building2 } from 'lucide-react'
 import { binance, bpi, ethfr, ledger, ripple, scaleway, solana, starknet } from '@/assets'
+import { LinkedIn } from '@/components/svg/linkedin'
+import { Twitter } from '@/components/svg/twitter'
+import { Discord } from '@/components/svg/discord'
+import { Email } from '@/components/svg/email'
+import { YouTube } from '@/components/svg/youtube'
+import { Zealy } from '@/components/svg/zealy'
 
 export const stats = [
   { label: "Members", value: "713", icon: Users },
@@ -8,27 +14,11 @@ export const stats = [
   { label: "Partners", value: "10+", icon: Building2 },
 ]
 
-export const partners = [
-  { name: "Binance", logo: "/placeholder.svg?height=100&width=100" },
-  { name: "Ledger", logo: "/placeholder.svg?height=100&width=100" },
-  { name: "Stargate", logo: "/placeholder.svg?height=100&width=100" },
-  { name: "Solana", logo: "/placeholder.svg?height=100&width=100" },
-  { name: "Ripple", logo: "/placeholder.svg?height=100&width=100" },
-  { name: "Ethereum", logo: "/placeholder.svg?height=100&width=100" },
-]
-
 export const navLinks = [
   { label: "Home", href: "/#hero" },
   { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },
   { label: "Events", href: "/events" },
-]
-
-export const socialLinks = [
-  { label: "Twitter", href: "https://twitter.com/42Blockchain_" },
-  { label: "Discord", href: "https://discord.gg/2NKXT7X8pe" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/42blockchain/" },
-  { label: "Youtube", href: "https://www.youtube.com/@42blockchain" }
 ]
 
 export const partnerLogos = [
@@ -41,3 +31,37 @@ export const partnerLogos = [
   { logo: solana, alt: 'Solana' },
   { logo: starknet, alt: 'Starknet' }
 ]
+
+export const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/42blockchain/",
+    icon: <LinkedIn />,
+  },
+  {
+    label: "Twitter",
+    href: "https://twitter.com/42Blockchain_",
+    icon: <Twitter />,
+  },
+  {
+    label: "Discord",
+    href: "https://discord.gg/2NKXT7X8pe",
+    icon: <Discord />,
+  },
+  {
+    label: "Email",
+    href: "mailto:info@42blockchain.com",
+    icon: <Email />,
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@42blockchain",
+    icon: <YouTube />,
+  },
+  {
+    label: "Zealy",
+    href: "https://zealy.io/c/42blockchain",
+    icon: <Zealy />,
+  },
+]
+
