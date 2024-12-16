@@ -16,9 +16,9 @@ export function Hero() {
             leading-6 text-gray-300 bg-glass border border-white/10"
         >
           Announcing our next event{' '}
-          <a href={discordLink} target='_blank' className="font-semibold text-light-blue">
+          <Link href={String(discordLink)} target='_blank' className="font-semibold text-light-blue">
             Read more <span aria-hidden="true">&rarr;</span>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="text-center">

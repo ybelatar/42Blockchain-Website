@@ -5,7 +5,7 @@ import { socialLinks } from '@/lib/constants'
 
 export function Contact() {
   return (
-    <section className="padding-y">
+    <section className="padding-y" id='contact'>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
         <div className="flex flex-wrap justify-center gap-8">

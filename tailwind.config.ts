@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      scrollBehavior: ['smooth'],
       colors: {
         "dark-blue": "#050816",
         "light-blue": "#06b6d4",

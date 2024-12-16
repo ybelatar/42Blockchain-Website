@@ -1,5 +1,17 @@
 import { Users, GraduationCap, Rocket, Building2 } from 'lucide-react'
-import { binance, bpi, ethfr, ledger, ripple, scaleway, solana, starknet } from '@/assets'
+import {
+  binance,
+  bpi,
+  ethfr,
+  ledger,
+  ripple,
+  scaleway,
+  solana,
+  starknet,
+  eth_global_bangkok,
+  kiln_conf,
+  algorand_hackathon
+} from '@/assets'
 import { LinkedIn } from '@/components/svg/linkedin'
 import { Twitter } from '@/components/svg/twitter'
 import { Discord } from '@/components/svg/discord'
@@ -65,3 +77,27 @@ export const socialLinks = [
   },
 ]
 
+
+export const eventsList = [
+  {
+    id: 1,
+    title: "ETH Global Bangkok",
+    date: "11/2024",
+    description: "Join us for an exciting blockchain development hackathon in the heart of Thailand.",
+    image: eth_global_bangkok
+  },
+  {
+    id: 2,
+    title: "Algorand Hackthon",
+    date: "11/2024",
+    description: "Explore the possibilities of Algorand blockchain technology in this intensive hackathon.",
+    image: algorand_hackathon
+  },
+  {
+    id: 3,
+    title: "Kiln Conference",
+    date: "11/2024",
+    description: "A gathering of blockchain experts and enthusiasts discussing the future of Web3.",
+    image: kiln_conf
+  }
+]
