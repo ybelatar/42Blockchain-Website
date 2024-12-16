@@ -87,3 +87,9 @@ body {
     margin: 0 auto;
   }
 }
+
+@layer utilities {
+  .padding-y {
+    @apply py-20 sm:py-32;
+  }
+}

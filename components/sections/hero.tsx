@@ -9,7 +9,7 @@ export function Hero() {
 
   const discordLink = socialLinks.find(link => link.label === 'Discord')?.href
   return (
-    <section className="relative overflow-hidden py-20 sm:py-32 container mx-auto px-4" id='hero'>
+    <section className="relative overflow-hidden padding-y container mx-auto px-4" id='hero'>
       <div className="mb-8 flex justify-center">
         <div
           className="relative rounded-full px-3 py-1 text-sm max-[330px]:text-xs 

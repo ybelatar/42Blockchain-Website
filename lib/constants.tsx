@@ -1,4 +1,5 @@
 import { Users, GraduationCap, Rocket, Building2 } from 'lucide-react'
+import { binance, bpi, ethfr, ledger, ripple, scaleway, solana, starknet } from '@/assets'
 
 export const stats = [
   { label: "Members", value: "713", icon: Users },
@@ -28,4 +29,15 @@ export const socialLinks = [
   { label: "Discord", href: "https://discord.gg/2NKXT7X8pe" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/42blockchain/" },
   { label: "Youtube", href: "https://www.youtube.com/@42blockchain" }
+]
+
+export const partnerLogos = [
+  { logo: binance, alt: 'Binance' },
+  { logo: bpi, alt: 'BPI' },
+  { logo: ethfr, alt: 'ETHFR' },
+  { logo: ledger, alt: 'Ledger' },
+  { logo: ripple, alt: 'Ripple' },
+  { logo: scaleway, alt: 'Scaleway' },
+  { logo: solana, alt: 'Solana' },
+  { logo: starknet, alt: 'Starknet' }
 ]
